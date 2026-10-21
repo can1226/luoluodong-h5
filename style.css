@@ -45,9 +45,15 @@ button { font-family: inherit; cursor: pointer; border: 0; outline: none; }
   width: 100%; height: 100%;
   padding: 32px 22px calc(48px + env(safe-area-inset-bottom, 0px));
   overflow-y: auto; -webkit-overflow-scrolling: touch;
-  display: flex; flex-direction: column; justify-content: center;
+  display: flex; flex-direction: column; 
   transition: transform 0.4s cubic-bezier(0.33, 1, 0.68, 1);
   will-change: transform;
+}
+.app {
+  position: relative; z-index: 1;
+  width: 100%; max-width: 480px;
+  height: 100vh; height: 100dvh;
+  margin: 0 auto; overflow: hidden;
 }
 
 /* 封面 */
